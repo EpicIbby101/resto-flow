@@ -66,7 +66,7 @@ const Header = () => {
           </Link>
         </div>
         {/* Burger button to open menu on mobile */}
-        <div className="flex lg:hidden">
+        <div className="flex lg:hidden ml-auto">
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
@@ -90,8 +90,9 @@ const Header = () => {
           </button>
         </div>
 
+        <div className="flex items-center lg:justify-end lg:flex-1">
         {/* Your links on large screens */}
-        <div className="hidden lg:flex lg:justify-center lg:gap-12 lg:items-center">
+        <div className="hidden lg:flex lg:justify-center lg:gap-8 lg:items-center">
           {links.map((link) => (
             <Link
               href={link.href}
@@ -105,7 +106,8 @@ const Header = () => {
         </div>
 
         {/* CTA on large screens */}
-        <div className="hidden lg:flex lg:justify-end lg:flex-1">{cta}</div>
+        <div className="hidden lg:flex lg:ml-6 ">{cta}</div>
+        </div>
       </nav>
 
       {/* Mobile menu, show/hide based on menu state. */}

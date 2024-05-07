@@ -3,7 +3,7 @@ import { ConfigProps } from "./types/config";
 
 const config = {
   // REQUIRED
-  appName: "RestoFlow",
+  appName: "RestoFlow CMS",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
     "A convenient CMS platform developed for an already established business",
