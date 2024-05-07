@@ -20,7 +20,7 @@ const Hero = () => {
           Your online businesses simplified!
         </h1>
         <p className="text-lg opacity-80 leading-relaxed text-white">
-          The CMS boilerplate with all you need to build your ecommerce business. <br /> From idea to deployment in less than a day.
+          The CMS boilerplate with all you need to build your ecommerce business. <br /> From idea to deployment in less than an hour.
         </p>
         <button className="btn btn-primary btn-wide">
           Get {config.appName}
