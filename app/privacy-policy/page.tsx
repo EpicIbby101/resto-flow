@@ -59,7 +59,7 @@ const PrivacyPolicy = () => {
         >
           {`Last Updated: 2023-08-25
 
-Thank you for visiting ShipFast ("we," "us," or "our"). This Privacy Policy outlines how we collect, use, and protect your personal and non-personal information when you use our website located at https://shipfa.st (the "Website").
+Thank you for visiting Resto-Flow ("we," "us," or "our"). This Privacy Policy outlines how we collect, use, and protect your personal and non-personal information when you use our website located at https://resto-flow.vercel.app (the "Website").
 
 By accessing or using the Website, you agree to the terms of this Privacy Policy. If you do not agree with the practices described in this policy, please do not use the Website.
 
@@ -97,11 +97,11 @@ We may update this Privacy Policy from time to time to reflect changes in our pr
 
 If you have any questions, concerns, or requests related to this Privacy Policy, you can contact us at:
 
-Email: marc@shipfa.st
+Email: kevin_grittner@outlook.com
 
 For all other inquiries, please visit our Contact Us page on the Website.
 
-By using ShipFast, you consent to the terms of this Privacy Policy.`}
+By using Resto-Flow, you consent to the terms of this Privacy Policy.`}
         </pre>
       </div>
     </main>
