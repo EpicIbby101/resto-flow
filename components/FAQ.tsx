@@ -14,7 +14,7 @@ interface FAQItemProps {
 const faqList: FAQItemProps[] = [
   {
     question: "What do I get exactly?",
-    answer: <div className="space-y-2 leading-relaxed">Loreum Ipseum</div>,
+    answer: <div className="space-y-2 leading-relaxed">You&apos;ll get access to the dashboard, where you can customize your store, create your own categories, and upload products. You&apos;ll also get access to a variety of tools and features to help you manage your store, such as analytics, inventory management, and more.</div>,
   },
   {
     question: "Can I get a refund?",
@@ -28,7 +28,7 @@ const faqList: FAQItemProps[] = [
   {
     question: "I have another question",
     answer: (
-      <div className="space-y-2 leading-relaxed">Cool, contact us by email</div>
+      <div className="space-y-2 leading-relaxed">Cool, contact us by email: Kevin_grittner@outlook.com</div>
     ),
   },
 ];
@@ -48,7 +48,7 @@ const FaqItem = ({ item }: { item: FAQItemProps }) => {
         aria-expanded={isOpen}
       >
         <span
-          className={`flex-1 text-base-content ${isOpen ? "text-primary" : ""}`}
+          className={`flex-1 ${isOpen ? "text-primary" : ""}`}
         >
           {item?.question}
         </span>
@@ -95,11 +95,11 @@ const FaqItem = ({ item }: { item: FAQItemProps }) => {
 
 const FAQ = () => {
   return (
-    <section className="bg-base-200" id="faq">
+    <section className="bg-neutral text-neutral-content" id="faq">
       <div className="py-24 px-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
         <div className="flex flex-col text-left basis-1/2">
           <p className="inline-block font-semibold text-primary mb-4">FAQ</p>
-          <p className="sm:text-4xl text-3xl font-extrabold text-base-content">
+          <p className="sm:text-4xl text-3xl font-extrabold ">
             Frequently Asked Questions
           </p>
         </div>

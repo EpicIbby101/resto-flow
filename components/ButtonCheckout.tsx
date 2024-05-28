@@ -29,7 +29,7 @@ const ButtonCheckout = ({
           cancelUrl: window.location.href,
           mode,
         }
-      );
+      ); 
 
       window.location.href = url;
     } catch (e) {
