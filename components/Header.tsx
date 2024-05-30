@@ -8,6 +8,7 @@ import Image from "next/image";
 import ButtonSignin from "./ButtonSignin";
 import logo from "@/app/icon.png";
 import config from "@/config";
+import { UserButton } from "@clerk/clerk-react";
 
 const links: {
   href: string;
@@ -107,6 +108,8 @@ const Header = () => {
 
         {/* CTA on large screens */}
         <div className="hidden lg:flex lg:ml-6 ">{cta}</div>
+        {/* User button for fallback */}
+        {/* <UserButton afterSignOutUrl="/"/> */}
         </div>
       </nav>
 
