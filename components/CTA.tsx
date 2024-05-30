@@ -1,7 +1,12 @@
+"use client"
+
 import Image from "next/image";
 import config from "@/config";
+import { useRouter } from "next/navigation";
 
 const CTA = () => {
+  const router = useRouter();
+
   return (
     <section className="relative hero overflow-hidden min-h-screen">
       <Image
@@ -21,9 +26,10 @@ const CTA = () => {
             section...
           </p>
 
-          <button className="btn btn-primary btn-wide">
+          <button onClick={() => router.push("/sign-up")} className="btn btn-primary btn-wide">
             Get {config.appName}
           </button>
+
         </div>
       </div>
     </section>

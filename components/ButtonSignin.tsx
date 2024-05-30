@@ -21,9 +21,9 @@ const ButtonSignin = ({
 
   const handleClick = () => {
     if (status === "authenticated") {
-      router.push(config.auth.callbackUrl);
+      router.push(config.auth.callbackUrl); // Redirects to callback URL if already logged in
     } else {
-      signIn(undefined, { callbackUrl: config.auth.callbackUrl });
+      router.push("/sign-up"); // Change this to your sign-up page URL
     }
   };
 

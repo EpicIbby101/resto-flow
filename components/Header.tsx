@@ -8,15 +8,12 @@ import Image from "next/image";
 import ButtonSignin from "./ButtonSignin";
 import logo from "@/app/icon.png";
 import config from "@/config";
+import { UserButton } from "@clerk/clerk-react";
 
 const links: {
   href: string;
   label: string;
 }[] = [
-  {
-    href: "/#pricing",
-    label: "Pricing",
-  },
   {
     href: "/#testimonials",
     label: "Reviews",
@@ -24,6 +21,10 @@ const links: {
   {
     href: "/#faq",
     label: "FAQ",
+  },
+  {
+    href: "/sign-in",
+    label: "Sign In",
   },
 ];
 
@@ -41,7 +42,7 @@ const Header = () => {
   }, [searchParams]);
 
   return (
-    <header className="bg-base-200">
+    <header className="bg-base-200 fixed top-0 w-full z-50">
       <nav
         className="container flex items-center justify-between px-8 py-4 mx-auto"
         aria-label="Global"
@@ -107,6 +108,8 @@ const Header = () => {
 
         {/* CTA on large screens */}
         <div className="hidden lg:flex lg:ml-6 ">{cta}</div>
+        {/* User button for fallback */}
+        {/* <UserButton afterSignOutUrl="/"/> */}
         </div>
       </nav>
 
